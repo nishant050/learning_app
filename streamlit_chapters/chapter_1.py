@@ -196,18 +196,31 @@ def render():
     ```
     Think of this as chanting a mantra to invoke a deity. You are telling Python, "I wish to invoke the library named `streamlit`, and I will refer to it by the shorter, conventional name `st`." Every Streamlit command you issue will be prefixed with `st.`, like `st.title()`, `st.write()`, and so on. This is a non-negotiable first step.
 
-    ### The Ritual of Execution: `streamlit run`
-    A Python script is just a text file. A Streamlit app is a living, interactive experience. The magic that transforms one into the other is a command you type not in Python, but in your computer's terminal (like Command Prompt or PowerShell on Windows, or Terminal on Mac/Linux).
+    ### The Ritual of Execution: The Live Development Workflow
+    A Python script is just a text file. A Streamlit app is a living, interactive experience. The magic that transforms one into the other is a special command and a simple, two-window workflow. **You do not run or visualize a Streamlit app *inside* a code editor or a Jupyter Notebook.** Instead, you run it as a separate server that you view in your web browser.
 
-    If you save your script as a file, for example `my_first_app.py`, you would navigate to that file's directory in your terminal and execute the following command:
+    This process is the ceremonial act that brings your creation to life. Here's how it works, step-by-step:
+
+    **Step 1: Write your code in a `.py` file** ✍️
+    Using your code editor (like VS Code), write all your Streamlit code into a single Python file. Let's call it `my_feast.py`.
+
+    **Step 2: Open a terminal** 🖥️
+    Open your computer's terminal. If you are using an editor like VS Code, you can use its powerful **Integrated Terminal** (usually opened with `Ctrl+` \` or from the "Terminal" menu). Make sure your terminal is in the same directory where you saved `my_feast.py`.
+
+    **Step 3: Run the sacred command** 🚀
+    In the terminal, type the command:
     ```bash
-    streamlit run my_first_app.py
+    streamlit run my_feast.py
     ```
-    This command does two things:
-    1.  It starts a local web server on your computer.
-    2.  It opens a new tab in your web browser pointing to that server, where your app is now running.
+    This command starts a local web server and automatically opens a new tab in your browser, where your app is now running live.
 
-    This command is the ceremonial act that brings your creation to life.
+    **Step 4: See your changes instantly** 👁️
+    This is where you visualize your development. Arrange your screen so you can see your code editor and your web browser.
+    - **Edit** the code in `my_feast.py`.
+    - **Save** the file.
+    - The browser tab will instantly give you the option to **"Rerun"**. Click it, and your changes appear.
+
+    This "edit-save-rerun" loop is the core of Streamlit development. It's a continuous conversation between your script and the live application.
 
     ### The Core Dharma: The Top-to-Bottom Rerun
     This is the most important concept to grasp. It is the central law of the Streamlit universe.
@@ -242,6 +255,7 @@ def render():
     This top-to-bottom rerun is the "dharma" you must internalize. Your script is not a static thing; it's a dynamic recipe that is re-cooked with fresh ingredients (user inputs) every single time there's an interaction. This makes coding feel like simple scripting, which is Streamlit's superpower.
     """)
     st.markdown("---")
+
 
     # ======================================================================================
     # PART 5: THE APPLICATION (THE GAMES & PUZZLES)
@@ -366,9 +380,9 @@ st.write(f"**You have selected a spice level of: {spice_level}**")
     You have successfully assembled your first Digital Thali. You started with a simple idea, arranged your components, and served a complete, interactive experience. Do not underestimate the power of what you have learned. While these examples are simple, they are the fundamental building blocks of applications that are changing industries.
 
     **Where this Power is Used:**
-    *   **The ISRO Scientist:** An engineer quickly builds a dashboard to visualize telemetry data from a satellite launch, using sliders to scrub through time and checkboxes to toggle different data streams. This isn't for the public; it's a quick, internal tool that helps them understand complex data in minutes, not days.
-    *   **The Fin-Tech Analyst in Mumbai:** A financial analyst who knows Pandas (a data analysis library) but not web development can wrap her latest stock market model in a Streamlit app. She can add text inputs for stock tickers and sliders for risk tolerance, turning her static analysis into an interactive tool for her team.
-    *   **The Aspiring Data Scientist in Bengaluru:** A student builds a personal project to showcase their skills to recruiters. Instead of just showing a Jupyter Notebook on GitHub, they deploy a Streamlit app where the recruiter can interact with their machine learning model, instantly demonstrating the real-world value of their work.
+    * **The ISRO Scientist:** An engineer quickly builds a dashboard to visualize telemetry data from a satellite launch, using sliders to scrub through time and checkboxes to toggle different data streams. This isn't for the public; it's a quick, internal tool that helps them understand complex data in minutes, not days.
+    * **The Fin-Tech Analyst in Mumbai:** A financial analyst who knows Pandas (a data analysis library) but not web development can wrap her latest stock market model in a Streamlit app. She can add text inputs for stock tickers and sliders for risk tolerance, turning her static analysis into an interactive tool for her team.
+    * **The Aspiring Data Scientist in Bengaluru:** A student builds a personal project to showcase their skills to recruiters. Instead of just showing a Jupyter Notebook on GitHub, they deploy a Streamlit app where the recruiter can interact with their machine learning model, instantly demonstrating the real-world value of their work.
 
     **The Key Takeaway:** The profound insight of this chapter is that **you can now build a web application.** It might be simple, but the barrier between your Python script and an interactive web experience has been shattered. You no longer need to wait for a "web developer" to show your work to the world. You can do it yourself.
 
